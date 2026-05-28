@@ -50,8 +50,8 @@ export default function ContactSection() {
     <SectionWrapper id="contact">
       <SectionHeading
         label="// 06. contact"
-        title="Let's Work Together"
-        subtitle="Open to internships, junior roles, and interesting collaborations. I'd love to hear from you."
+        title="Let&apos;s Work Together"
+        subtitle="Open to internships, junior roles, and interesting collaborations. I&apos;d love to hear from you."
       />
 
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
@@ -154,7 +154,7 @@ export default function ContactSection() {
                   required
                   value={form.subject}
                   onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                  placeholder="What's this about?"
+                  placeholder="What&apos;s this about?"
                   className="w-full bg-bg-elevated border border-border-subtle rounded-lg px-4 py-2.5 text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent-cyan/50 transition-colors"
                 />
               </div>

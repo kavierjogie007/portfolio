@@ -120,7 +120,7 @@ export default function ProjectsSection() {
     <SectionWrapper id="projects">
       <SectionHeading
         label="// 03. projects"
-        title="Things I've Built"
+        title="Things I&apos;ve Built"
         subtitle="A selection of academic and personal projects that demonstrate my technical range."
       />
 

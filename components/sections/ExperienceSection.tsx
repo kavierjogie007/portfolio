@@ -11,7 +11,7 @@ export default function ExperienceSection() {
     <SectionWrapper id="experience">
       <SectionHeading
         label="// 04. experience"
-        title="Where I've Been"
+        title="Where I&apos;ve Been"
         subtitle="Roles that have shaped my technical and professional growth."
       />
 

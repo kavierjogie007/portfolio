@@ -49,13 +49,13 @@ export default function AboutSection() {
             className="space-y-4 text-text-secondary leading-relaxed"
           >
            {[
-  `I'm a Bachelor of Science Honours graduate in Computer Science and Information Systems from Nelson Mandela University, with a strong focus on mobile development, software engineering, and data-driven problem solving. I thrive at the intersection of clean code, thoughtful design, and analytical thinking.`,
+  `I am a Bachelor of Science Honours graduate in Computer Science and Information Systems from Nelson Mandela University, with a strong focus on mobile development, software engineering, and data-driven problem solving. I thrive at the intersection of clean code, thoughtful design, and analytical thinking.`,
 
   `My core work involves building Android applications in Java, designing intuitive user experiences, and exploring how data mining techniques can uncover meaningful insights. I bring the same level of discipline and creativity to both academic research and real-world software development.`,
 
-  `Beyond development, I worked as a lab assistant where I guided students through programming concepts and practical challenges. Teaching strengthened both my technical communication and problem-solving abilities while reinforcing my passion for continuous learning.`,
+  `Beyond development, I worked as a lab assistant where I guided students through programming concepts and practical challenges. Teaching strengthened my technical communication and problem-solving abilities while reinforcing my passion for continuous learning.`,
 
-  `I'm actively seeking graduate opportunities, internships, and junior developer roles where I can contribute to impactful projects, collaborate with talented teams, and continue growing as a software engineer.`,
+  `I am actively seeking graduate opportunities, internships, and junior developer roles where I can contribute to impactful projects, collaborate with talented teams, and continue growing as a software engineer.`,
             ].map((para, i) => (
               <motion.p key={i} variants={fadeUp}>
                 {para}
