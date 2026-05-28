@@ -39,12 +39,32 @@ export default function ContactSection() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setStatus('sending');
-    // Simulate form submission — integrate with Formspree/Resend in production
-    setTimeout(() => setStatus('sent'), 1500);
-  };
+const handleSubmit = async (e: FormEvent) => {
+  e.preventDefault();
+  setStatus('sending');
+
+  try {
+    const res = await fetch("https://formspree.io/f/xwvzyeyj", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (res.ok) {
+      setStatus("sent");
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } else {
+      setStatus("idle");
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    setStatus("idle");
+    alert("Network error. Please try again.");
+  }
+};
 
   return (
     <SectionWrapper id="contact">

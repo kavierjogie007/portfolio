@@ -17,9 +17,9 @@ export default function Footer() {
               <span className="text-text-primary">{PERSONAL.firstName}</span>
               <span className="text-accent-cyan">.</span>
             </p>
-            <p className="text-xs text-text-muted mt-1 font-mono">
-              CS Student & Mobile Developer
-            </p>
+         <p className="text-xs text-text-muted mt-1 font-mono">
+  BSc Computer Science Graduate & Mobile Developer
+</p>
           </div>
 
           {/* Nav links */}
