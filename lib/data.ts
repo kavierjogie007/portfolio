@@ -57,12 +57,13 @@ export const PROJECTS = [
     title: 'Madibaz Netball Statistics App',
     description:
       'A mobile app developed for netball coaches to capture real-time player statistics during matches and provide post-match performance analysis using interactive charts and analytics dashboards.',
-    tags: ['Java', 'Android Studio', 'SQLite', 'MPAndroidChart'],
+    tags: ['Java', 'Android Studio', 'Supabase', 'MPAndroidChart'],
     category: 'Mobile App',
     accent: '#00E5FF',
     github: '#',
     demo: '#',
     featured: true,
+     image: '/projects/Netball App.png'
   },
 
   {
@@ -76,6 +77,7 @@ export const PROJECTS = [
     github: 'https://github.com/kavierjogie007/intelligent-aid-desk',
     demo: 'https://kavier-jogie-ai-productivity-assistant.lovable.app',
     featured: true,
+    image: '/projects/AI Workplace Productivity Assistant.png'
   },
 ];
 

@@ -7,6 +7,7 @@ import SectionWrapper from '@/components/ui/SectionWrapper';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { PROJECTS } from '@/lib/data';
 import { staggerContainer, fadeUp } from '@/lib/utils';
+import Image from 'next/image';
 
 /* Decorative placeholder image for each project */
 function ProjectImagePlaceholder({ accent, category }: { accent: string; category: string }) {
@@ -55,7 +56,21 @@ function ProjectCard({
       whileHover={{ y: -6 }}
       className="glass-card rounded-2xl p-6 border border-border-subtle hover:border-accent-cyan/20 transition-all duration-300 group flex flex-col"
     >
-      <ProjectImagePlaceholder accent={project.accent} category={project.category} />
+      {project.image ? (
+  <div className="relative h-44 rounded-xl overflow-hidden mb-6">
+    <Image
+      src={project.image}
+      alt={project.title}
+      fill
+      className="object-cover object-top"
+    />
+  </div>
+) : (
+  <ProjectImagePlaceholder
+    accent={project.accent}
+    category={project.category}
+  />
+)}
 
       <div className="flex items-center justify-between mb-3">
         <span
