@@ -117,7 +117,7 @@ export default function ContactSection() {
             >
               <CheckCircle2 size={48} className="text-accent-teal mb-4" />
               <h3 className="font-display font-bold text-xl text-text-primary mb-2">Message Sent!</h3>
-              <p className="text-text-secondary text-sm">Thank you for reaching out. I'll get back to you soon.</p>
+              <p className="text-text-secondary text-sm">Thank you for reaching out. I&apos;ll get back to you soon.</p>
               <button
                 onClick={() => { setStatus('idle'); setForm({ name: '', email: '', subject: '', message: '' }); }}
                 className="mt-6 text-sm text-accent-cyan hover:underline"
